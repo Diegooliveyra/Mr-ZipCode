@@ -3,6 +3,8 @@ import Address from './pages/Address/Address';
 import Favorites from './pages/Favorites/Favorites';
 import Home from './pages/Home/Home';
 
+import GlobalStyles from './styles/GlobalStyles';
+
 function App() {
   return (
     <BrowserRouter>
@@ -12,6 +14,7 @@ function App() {
         <Route path="/favorites" component={Favorites} />
         <Route path="*" exact component={Home} />
       </Switch>
+      <GlobalStyles />
     </BrowserRouter>
   );
 }
