@@ -16,7 +16,8 @@ const Home = () => {
   function handleSearch(e) {
     e.preventDefault();
     if (!search.trim().length === 0 || regexCep.test(search)) {
-      history.push(`/address/${search}`);
+      const searchFormatted = search.replace('-', '');
+      history.push(`/address/${searchFormatted}`);
     } else {
       setSearch('');
       setError(true);
