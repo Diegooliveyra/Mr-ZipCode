@@ -21,6 +21,7 @@ const GlobalStyles = createGlobalStyle`
     color: var(--full-black);
     font-family: var(--font-family-primary);
     font-size: 1.6rem;
+    color: var(---black);
   }
   body, button, input, h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-primary);
