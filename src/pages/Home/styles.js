@@ -19,4 +19,16 @@ export const Wrapper = styled.div`
     font-size: 1.4rem;
     margin: 5px;
   }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  span {
+    font-size: 1.2rem;
+    text-align: center;
+    display: block;
+    margin: 0 0 5px 0;
+  }
 `;
