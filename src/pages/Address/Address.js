@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useHistory, useParams } from 'react-router-dom';
 import useFetch from '../../hooks/useFetch';
 import { GET_CEP } from '../../services/api';
 
@@ -7,6 +7,7 @@ import * as S from './styles';
 
 const Address = () => {
   const { cep } = useParams();
+  const history = useHistory();
 
   const { data, request } = useFetch();
 
@@ -16,6 +17,7 @@ const Address = () => {
   }, [request, cep]);
 
   console.log(data);
+  if (data === null) return <h1>CEP Não encontrado</h1>;
   if (data)
     return (
       <S.Wrapper>
@@ -26,22 +28,28 @@ const Address = () => {
           />
         </S.Map>
         <S.InfoAddress>
-          <h2>CEP: {data.cep}</h2>
-          <ul>
-            <li>
-              <span> Logradouro:</span> {data.logradouro}
-            </li>
-            <li>
-              <span> Bairro:</span> {data.bairro}
-            </li>
-            <li>
-              <span> Municipio: </span>
-              {data.localidade}
-            </li>
-            <li>
-              <span> Estado:</span> {data.uf}
-            </li>
-          </ul>
+          <S.FavoriteButton>
+            <button>Favoritar</button>
+            <button onClick={() => history.push('/')}>Voltar</button>
+          </S.FavoriteButton>
+          <div>
+            <h2>CEP: {data.cep}</h2>
+            <ul>
+              <li>
+                <span> Logradouro:</span> {data.logradouro}
+              </li>
+              <li>
+                <span> Bairro:</span> {data.bairro}
+              </li>
+              <li>
+                <span> Municipio: </span>
+                {data.localidade}
+              </li>
+              <li>
+                <span> Estado:</span> {data.uf}
+              </li>
+            </ul>
+          </div>
         </S.InfoAddress>
       </S.Wrapper>
     );

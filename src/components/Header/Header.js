@@ -2,13 +2,15 @@ import React from 'react';
 import * as S from './styles.js';
 
 import { ReactComponent as LogoGithub } from '../../assets/github.svg';
-import {ReactComponent as Logo} from '../../assets/logo.svg'
+import { ReactComponent as Logo } from '../../assets/logo.svg';
 
 const Header = () => {
   return (
     <S.Header>
       <S.HeaderWrapper>
-        <Logo/>
+        <a href="/">
+          <Logo />
+        </a>
         <ul>
           <li>
             <a
