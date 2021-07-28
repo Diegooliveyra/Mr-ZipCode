@@ -5,7 +5,6 @@ import * as S from './styles';
 const Favorite = ({ data }) => {
   const [address, setAdress] = useLocalStorage('endereços', []);
 
-  console.log(address);
   function setFavoriteAddress() {
     setAdress([
       ...address,

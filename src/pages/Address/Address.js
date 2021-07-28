@@ -15,7 +15,7 @@ const Address = () => {
     request(endpoint, options);
   }, [request, cep]);
 
-  if (data === null) return <h1>CEP Não encontrado</h1>;
+  if (data.erro) return <h1>CEP Não encontrado</h1>;
   if (data)
     return (
       <S.Wrapper>

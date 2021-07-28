@@ -5,7 +5,7 @@ import * as S from './styles';
 
 const Favorites = () => {
   const [address] = useLocalStorage('endereços');
-  console.log(address);
+
   return (
     <S.Wrapper>
       <ul>
