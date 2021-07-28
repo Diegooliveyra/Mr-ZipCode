@@ -21,5 +21,11 @@ export const HeaderWrapper = styled.div`
     display: flex;
     align-items: center;
     gap: 20px;
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
   }
 `;

@@ -1,24 +1,28 @@
 import React from 'react';
 import * as S from './styles.js';
+import { Link } from 'react-router-dom';
 
-import { ReactComponent as LogoGithub } from '../../assets/github.svg';
 import { ReactComponent as Logo } from '../../assets/logo.svg';
 
 const Header = () => {
   return (
     <S.Header>
       <S.HeaderWrapper>
-        <a href="/">
+        <Link to="/">
           <Logo />
-        </a>
+        </Link>
+
         <ul>
+          <li>
+            <Link to="/favorites">Meus Favoritos</Link>
+          </li>
           <li>
             <a
               href="https://github.com/Diegooliveyra"
               target="_blank"
               rel="noreferrer"
             >
-              <LogoGithub />
+              Código Fonte
             </a>
           </li>
         </ul>
