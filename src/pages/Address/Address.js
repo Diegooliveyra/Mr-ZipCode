@@ -5,16 +5,18 @@ import { GET_CEP } from '../../services/api';
 import Favorite from '../../components/Favorite/Favorite';
 
 import * as S from './styles';
+import Loading from '../../components/Loading.js/Loading';
 
 const Address = () => {
   const { cep } = useParams();
-  const { data, request } = useFetch();
+  const { data, request, loading } = useFetch();
 
   useEffect(() => {
     const { options, endpoint } = GET_CEP(cep);
     request(endpoint, options);
   }, [request, cep]);
 
+  if (loading) return <Loading />;
   if (data.erro) return <h1>CEP Não encontrado</h1>;
   if (data)
     return (
