@@ -11,12 +11,13 @@ const Home = () => {
   const [search, setSearch] = useState('');
   const [error, setError] = useState(false);
   const history = useHistory();
-  const regexCep = /[0-9]{5}-?[0-9]{3}/;
+  const regexCep = /([0-9]{5}-?[0-9]{3})/;
 
   function handleSearch(e) {
     e.preventDefault();
+    const searchFormatted = search.replace('-', '');
+
     if (!search.trim().length === 0 || regexCep.test(search)) {
-      const searchFormatted = search.replace('-', '');
       history.push(`/address/${searchFormatted}`);
     } else {
       setSearch('');
