@@ -1,14 +1,13 @@
 import React, { useEffect } from 'react';
-import { useHistory, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import useFetch from '../../hooks/useFetch';
 import { GET_CEP } from '../../services/api';
+import Favorite from '../../components/Favorite/Favorite';
 
 import * as S from './styles';
 
 const Address = () => {
   const { cep } = useParams();
-  const history = useHistory();
-
   const { data, request } = useFetch();
 
   useEffect(() => {
@@ -16,7 +15,6 @@ const Address = () => {
     request(endpoint, options);
   }, [request, cep]);
 
-  console.log(data);
   if (data === null) return <h1>CEP Não encontrado</h1>;
   if (data)
     return (
@@ -28,10 +26,7 @@ const Address = () => {
           />
         </S.Map>
         <S.InfoAddress>
-          <S.FavoriteButton>
-            <button>Favoritar</button>
-            <button onClick={() => history.push('/')}>Voltar</button>
-          </S.FavoriteButton>
+          <Favorite data={data} />
           <div>
             <h2>CEP: {data.cep}</h2>
             <ul>
