@@ -9,6 +9,7 @@ export const Header = styled.header`
   background-color: #fff;
   box-shadow: 0px 18px 41px rgba(0, 0, 0, 0.05);
   z-index: 999;
+  display: inline;
 `;
 
 export const HeaderWrapper = styled.div`
