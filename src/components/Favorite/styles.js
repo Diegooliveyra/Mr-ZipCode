@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const FavoriteButton = styled.div`
-  width: 100%;
+  width: calc(100% - 16px);
   display: flex;
   justify-content: flex-end;
   gap: 1rem;

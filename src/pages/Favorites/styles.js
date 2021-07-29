@@ -9,17 +9,4 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
-  ul {
-    display: flex;
-    /* justify-content: space-around; */
-    gap: 2.5rem;
-    flex-wrap: wrap;
-
-    li {
-      width: 300px;
-      height: 400px;
-      border: 1px solid #999;
-    }
-  }
 `;

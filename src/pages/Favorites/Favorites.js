@@ -1,4 +1,5 @@
 import React from 'react';
+import Card from '../../components/Card/Card';
 import useLocalStorage from '../../hooks/useLocalStorage';
 
 import * as S from './styles';
@@ -8,15 +9,7 @@ const Favorites = () => {
 
   return (
     <S.Wrapper>
-      <ul>
-        {address &&
-          address.map((endereco) => (
-            <li key={endereco.cep}>
-              <p>Cep:{endereco.cep}</p>
-              <p>Rua:{endereco.logradouro}</p>
-            </li>
-          ))}
-      </ul>
+      <Card data={address} />
     </S.Wrapper>
   );
 };
