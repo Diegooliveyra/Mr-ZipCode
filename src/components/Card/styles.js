@@ -7,7 +7,7 @@ export const ContentCard = styled.ul`
 
   li {
     width: 300px;
-    min-height: 430px;
+    min-height: 445px;
     padding: 1rem;
     border-radius: 5px;
     border: 1px solid #ccc;
@@ -17,7 +17,7 @@ export const ContentCard = styled.ul`
 
   img {
     border-radius: 5px;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 
   div {

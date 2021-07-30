@@ -12,7 +12,7 @@ const Favorite = ({ data }) => {
         cep: data.cep,
         logradouro: data.logradouro,
         bairro: data.bairro,
-        municipio: data.municipio,
+        localidade: data.localidade,
         uf: data.uf,
       },
     ]);

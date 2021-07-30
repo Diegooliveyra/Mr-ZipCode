@@ -9,7 +9,7 @@ const Favorites = () => {
 
   return (
     <S.Wrapper>
-      {address ? <Card data={address} /> : <h3>Nenhum endereço salvo</h3>}
+      {address.length ? <Card data={address} /> : <p>Nenhum endereço salvo</p>}
     </S.Wrapper>
   );
 };
