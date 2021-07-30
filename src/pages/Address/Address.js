@@ -30,8 +30,10 @@ const Address = () => {
         <S.InfoAddress>
           <Favorite data={data} />
           <div>
-            <h2>CEP: {data.cep}</h2>
             <ul>
+              <li>
+                <span> CEP::</span> {data.cep}
+              </li>
               <li>
                 <span> Logradouro:</span> {data.logradouro}
               </li>
