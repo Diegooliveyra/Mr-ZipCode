@@ -8,6 +8,8 @@ import * as S from './styles';
 import Loading from '../../components/Loading.js/Loading';
 import Nofound from '../../components/NoFound/Nofound';
 
+import MapConfig from '../../components/Map/MapConfig';
+
 const Address = () => {
   const { cep } = useParams();
   const { data, request, loading } = useFetch();
@@ -23,10 +25,7 @@ const Address = () => {
     return (
       <S.Wrapper>
         <S.Map>
-          <img
-            src="https://www.zyrgon.com/wp-content/uploads/2019/06/googlemaps-Zyrgon.jpg"
-            alt=""
-          />
+          <MapConfig cep={cep} />
         </S.Map>
         <S.InfoAddress>
           <Favorite data={data} />
