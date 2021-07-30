@@ -6,6 +6,7 @@ import Favorite from '../../components/Favorite/Favorite';
 
 import * as S from './styles';
 import Loading from '../../components/Loading.js/Loading';
+import Nofound from '../../components/NoFound/Nofound';
 
 const Address = () => {
   const { cep } = useParams();
@@ -17,7 +18,7 @@ const Address = () => {
   }, [request, cep]);
 
   if (loading) return <Loading />;
-  if (data.erro) return <h1>CEP Não encontrado</h1>;
+  if (data.erro) return <Nofound />;
   if (data)
     return (
       <S.Wrapper>

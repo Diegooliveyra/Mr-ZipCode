@@ -14,7 +14,7 @@ function App() {
         <Route path="/" exact component={Home} />
         <Route path="/address/:cep" exact component={Address} />
         <Route path="/favorites" component={Favorites} />
-        <Route path="*" exact component={Home} />
+        <Route path="*" component={Home} />
       </Switch>
       <GlobalStyles />
     </BrowserRouter>
