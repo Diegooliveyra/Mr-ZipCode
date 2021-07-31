@@ -37,7 +37,7 @@ const Header = () => {
           </li>
           <li>
             <a
-              href="https://github.com/Diegooliveyra"
+              href="https://github.com/Diegooliveyra/Mr-Zip"
               target="_blank"
               rel="noreferrer"
             >
