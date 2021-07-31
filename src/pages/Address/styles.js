@@ -32,6 +32,10 @@ export const InfoAddress = styled.div`
   flex: 1;
   padding: 2rem;
 
+  @media (max-width: 900px) {
+    padding: 2rem 0;
+  }
+
   h2 {
     margin-bottom: 2rem;
     color: var(--primary-color);

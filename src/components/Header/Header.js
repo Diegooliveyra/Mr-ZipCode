@@ -7,7 +7,6 @@ import * as S from './styles.js';
 
 const Header = () => {
   const [menuMobile, setMenuMobile] = useState(false);
-  console.log(menuMobile);
 
   return (
     <S.Header>

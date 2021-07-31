@@ -6,12 +6,16 @@ export const FavoriteButton = styled.div`
   justify-content: flex-end;
   gap: 1rem;
 
+  @media (max-width: 900px) {
+    justify-content: center;
+  }
+
   button {
     margin-bottom: 2rem;
     padding: 5px;
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 7px;
     cursor: pointer;
 
     background: transparent;

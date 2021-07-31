@@ -4,6 +4,7 @@ import useLocalStorage from '../../hooks/useLocalStorage';
 
 import { ReactComponent as BackButton } from '../../assets/back.svg';
 import { ReactComponent as FavoriteButton } from '../../assets/favorite.svg';
+import { ReactComponent as SaveButton } from '../../assets/save.svg';
 
 import * as S from './styles';
 
@@ -33,9 +34,14 @@ const Favorite = ({ data }) => {
   return (
     <S.FavoriteButton disabled={disabled}>
       <button disabled={disabled} onClick={setFavoriteAddress}>
-        <FavoriteButton />
-        Favoritar
+        <SaveButton />
+        Salvar
       </button>
+      <button onClick={() => history.push('/favorites')}>
+        <FavoriteButton />
+        Favoritos
+      </button>
+
       <button onClick={() => history.push('/')}>
         <BackButton /> Voltar
       </button>

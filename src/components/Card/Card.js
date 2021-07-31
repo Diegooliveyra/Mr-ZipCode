@@ -42,10 +42,14 @@ const Card = ({ data }) => {
             </p>
           </div>
           <footer>
-            <button>
+            <a
+              href={`https://www.google.com/maps/place/${address.localidade},${address.cep}`}
+              target="_blank"
+              rel="noreferrer"
+            >
               <Rota />
               Rotas
-            </button>
+            </a>
             <button onClick={() => deleteAddress(address.cep)}>
               <Lixeira />
               Excluir

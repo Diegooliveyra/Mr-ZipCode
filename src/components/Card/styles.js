@@ -40,10 +40,12 @@ export const ContentCard = styled.ul`
     display: flex;
     justify-content: space-between;
 
-    button {
+    button,
+    a {
       background: transparent;
       border: 0;
       cursor: pointer;
+      color: var(--black);
 
       display: flex;
       align-items: center;
