@@ -5,8 +5,13 @@ export const ContentCard = styled.ul`
   gap: 2.5rem;
   flex-wrap: wrap;
 
+  @media (max-width: 970px) {
+    justify-content: center;
+  }
+
   li {
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
     min-height: 445px;
     padding: 1rem;
     border-radius: 5px;

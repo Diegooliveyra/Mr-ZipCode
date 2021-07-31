@@ -8,12 +8,24 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    padding: 2rem;
+  }
 `;
 
 export const Map = styled.div`
   background-color: aliceblue;
   height: 280px;
-  width: 400px;
+  width: 100%;
+  max-width: 450px;
+
+  @media (max-width: 900px) {
+    margin: 2rem;
+    width: 100%;
+    max-width: 420px;
+  }
 `;
 
 export const InfoAddress = styled.div`
