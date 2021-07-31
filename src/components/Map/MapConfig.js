@@ -37,7 +37,7 @@ const MapConfig = ({ cep }) => {
         isMarkerShown={false}
         googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpag7bQCb9utplIXoQMIg3EvwlbRz-Q0s&v=3.exp"
         loadingElement={<div style={{ height: `100%` }} />}
-        containerElement={<div style={{ height: `300px`, width: `450px` }} />}
+        containerElement={<div style={{ height: `100%`, width: `100%` }} />}
         mapElement={<div style={{ height: `100%` }} />}
         lat={lat}
         lng={lng}

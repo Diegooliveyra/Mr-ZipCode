@@ -11,7 +11,9 @@ export const Wrapper = styled.div`
 `;
 
 export const Map = styled.div`
-  flex: 1;
+  background-color: aliceblue;
+  height: 280px;
+  width: 400px;
 `;
 
 export const InfoAddress = styled.div`

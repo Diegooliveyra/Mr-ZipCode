@@ -21,7 +21,7 @@ export const ContentCard = styled.ul`
   }
 
   div {
-    flex: 2;
+    flex: 1;
 
     p {
       line-height: 2.5rem;
@@ -45,4 +45,9 @@ export const ContentCard = styled.ul`
       gap: 5px;
     }
   }
+`;
+
+export const Map = styled.section`
+  margin-bottom: 1rem;
+  height: 260px;
 `;
