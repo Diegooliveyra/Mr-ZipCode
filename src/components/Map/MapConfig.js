@@ -1,17 +1,25 @@
 import React, { useEffect, useState } from 'react';
 
-import useFetch from '../../hooks/useFetch';
 import { GET_GEO_LOCATION } from '../../services/api';
 import Map from './Map';
 
 const MapConfig = ({ cep }) => {
-  const { data, request } = useFetch();
+  const [data, setData] = useState([]);
   const [lat, setLat] = useState(0);
   const [lng, setLng] = useState(0);
+
   useEffect(() => {
-    const { options, endpoint } = GET_GEO_LOCATION(cep);
-    request(endpoint, options);
-  }, [request, cep]);
+    async function getGeoLocation() {
+      const { options, endpoint } = GET_GEO_LOCATION(cep);
+      const response = await fetch(endpoint, options);
+      const json = await response.json();
+      setData(json);
+    }
+    getGeoLocation();
+    return () => {
+      setData();
+    };
+  }, [cep]);
 
   useEffect(() => {
     if (data.results) {
@@ -27,7 +35,7 @@ const MapConfig = ({ cep }) => {
     return (
       <Map
         isMarkerShown={false}
-        googleMapURL="https://maps.googleapis.com/maps/api/js?key=KEY_API&v=3.exp"
+        googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpag7bQCb9utplIXoQMIg3EvwlbRz-Q0s&v=3.exp"
         loadingElement={<div style={{ height: `100%` }} />}
         containerElement={<div style={{ height: `300px`, width: `450px` }} />}
         mapElement={<div style={{ height: `100%` }} />}
