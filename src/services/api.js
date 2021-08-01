@@ -12,7 +12,7 @@ export const GET_CEP = (cep) => {
 
 export const GET_GEO_LOCATION = (cep) => {
   return {
-    endpoint: `https://maps.googleapis.com/maps/api/geocode/json?address=${cep}&key=AIzaSyBpag7bQCb9utplIXoQMIg3EvwlbRz-Q0s`,
+    endpoint: `https://maps.googleapis.com/maps/api/geocode/json?address=${cep}&key=API_KEY`,
     options: {
       method: 'GET',
       cache: 'no-store',

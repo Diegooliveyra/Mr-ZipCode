@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# <img src="./src/assets/logo.svg" alt="Logo" width="250" />
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## ℹ️ Sobre o projeto
 
-## Available Scripts
+Pedro é um senhor que gosta de conhecer locais novos e por isso ele anota em um caderninho todos os CEPs dos locais que ele visitou em sua cidade. Como é muito difícil andar com muitos caderninhos, Pedro quer uma solução que ele possa guardar o endereço de cada CEP que ele anotou em seu caderno. Se possível, ele também gostaria de ver os endereços em um mapa.
 
-In the project directory, you can run:
+## ✨ demonstração
 
-### `yarn start`
+</br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<img src="https://gyazo.com/3dee099f5de1718001375fd37c14a14f" alt="Image from Gyazo" width="1270"/>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+</br>
+Você pode conferir o resultado final em: https://mrzipcode.netlify.app/
 
-### `yarn test`
+## 🎯 Objetivo do projeto
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Esse é um desafio técnico para uma vaga de desenvolvedor front-end na Maida.health.
 
-### `yarn build`
+## 📝 Tecnologias
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Para a realização desse projeto foi utilizado as seguintes tecnologias/linguagens:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [ReactJS](https://pt-br.reactjs.org) para criação da interface
+- [React-router-dom](https://www.npmjs.com/package/react-router-dom) para criação de rotas
+- [Styled-components ](https://styled-components.com/) para estilização com o css
+- [Google Maps Api](https://developers.google.com/maps?hl=pt-br) Api para vizualização dos mapas
+- [Google Geocode Api](https://developers.google.com/maps/documentation/geocoding/start) Api para geolocalização
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## ⚙️ Instalação
 
-### `yarn eject`
+Para que este rode em sua máquina, siga os passos abaixo:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Para o funcionamento dos mapas, é necessario um Api key do google, favor adcionar a key na api do projeto e no componente de MapConfig,
+caso não tenha uma key, podera vizualizar o projeto funcionando aqui https://mrzipcode.netlify.app/
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+# Clone o repositório em alguma pasta em sua máquina
+$ git clone https://github.com/Diegooliveyra/Mr-Zip.git
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Entre no repositório
+$ cd Mr-Zip
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Instale as dependencias digitando no termimal:
+$ yarn install
 
-## Learn More
+Rode a aplicação no modo de desenvolvimento.
+$ yarn start
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Abra http://localhost:3000 no seu navegador para visualizar o projeto
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📝 Licença
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p>O projeto se encontra sob licença MIT. Para mais detalhes, acesse <a href='LICENSE'>license<a>.</p>
+<p>Criado com 💙 por <a href='https://github.com/Diegooliveyra/' target='blank'>Diego Oliveira</a></p>
