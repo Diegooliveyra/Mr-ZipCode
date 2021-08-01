@@ -8,7 +8,7 @@ Pedro é um senhor que gosta de conhecer locais novos e por isso ele anota em um
 
 </br>
 
-<img src="https://gyazo.com/3dee099f5de1718001375fd37c14a14f" alt="Image from Gyazo" width="1270"/>
+<img src="https://i.gyazo.com/3dee099f5de1718001375fd37c14a14f.gif" alt="Image from Gyazo" width="1270"/>
 
 </br>
 Você pode conferir o resultado final em: https://mrzipcode.netlify.app/
